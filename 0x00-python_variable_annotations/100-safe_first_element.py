@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
+'''Task 10's module.
 '''
-Task 11 module
-'''
-from typing Sequence, Union
+from typing import Any, Sequence, Union
+
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-    '''
-    return the first element of lst or None
+    '''Retrieves the first element of a sequence if it exists.
     '''
     if lst:
         return lst[0]
