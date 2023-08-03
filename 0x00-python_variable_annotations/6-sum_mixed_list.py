@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-'''
-Task 7 module
+'''Task 7 module.
 '''
 from typing import List, Union
 
 
-def sum_mixed_list(mxd_list: List[Union[float, int]]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    '''Computes the sum of a list of integers and floating-point numbers.
     '''
-    adds up list of float and int
-    '''
-    return float(sum(mxd_list))
+    return float(sum(mxd_lst))
