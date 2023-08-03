@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-# add - sum up two float variables and return a float
+'''
+Task 0 module
+'''
 
 
 def add(a: float, b: float) -> float:
+    '''
+    sum up and returns the result of type float
+    '''
     return a + b
