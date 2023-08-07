@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
+'''Task 0's module.
 '''
-Task 0's module
-'''
-from typing import Coroutine, Any
-import random
-import time
 import asyncio
+import random
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: int = 10) -> float:
+    '''Waits for a random number of seconds.
     '''
-    wait for a delay time and returns the
-    delay time
-    '''
-    rand = random.uniform(0, max_delay)
-    await asyncio.sleep(rand)
-    return rand
+    wait_time = random.random() * max_delay
+    await asyncio.sleep(wait_time)
+    return wait_time
