@@ -3,11 +3,11 @@
 Task 0's module
 """
 import asyncio
-from typing import AsyncGenerator, Any
+from typing import Iterable
 import random
 
 
-async def async_generator() -> AsyncGenerator[float, Any]:
+async def async_generator() -> Iterable[float]:
     """
     yields a random number range 0 - 10
     """
